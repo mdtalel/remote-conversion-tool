@@ -1,0 +1,65 @@
+:host {
+  width: 100%;
+  height: 100%;
+  .no-config {
+    position: absolute;
+    width: 10em;
+    height: 3em;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.5em;
+    margin-left: -5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+  }
+  ::ng-deep .fm-ng-wrapper {
+    height: 100% !important;
+  }
+
+  ::ng-deep .fm-filter-header {
+    min-width: 90px;
+  }
+
+  ::ng-deep  #fm-toolbar-wrapper #fm-toolbar {
+    width: 100%;
+    height: 50px;
+
+}
+  ::ng-deep #fm-toolbar-wrapper {
+    height: 50px;
+
+    .fm-divider {
+      margin: 2px 15px 0 15px !important;
+      height: 40px;
+      border-right: none !important;
+    }
+    li a {
+      height: 40px !important;
+      svg {
+        height: 30px;
+      }
+      .fm-tab-label {
+        top: 15px !important;
+        right: 2px !important;
+
+      }
+    }
+
+    .fm-list-wrapper {
+      width: 100%;
+      height: 100%;
+      .fm-toolbar-group-left {
+        top: 50%;
+        margin-top: -12px !important;
+      }
+      .fm-toolbar-group-right {
+        top: 50%;
+        margin-top: -12px !important;
+      }
+     
+    }
+ }
+}

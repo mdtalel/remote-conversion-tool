@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ConversionToolComponent } from './conversion-tool/conversion-tool.component';
+import { ConversionReportToolComponent } from './conversion-report-tool/conversion-report-tool.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ConversionToolComponent
+    component: ConversionReportToolComponent
   }
 ];
 

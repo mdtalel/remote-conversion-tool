@@ -44,7 +44,7 @@ module.exports = {
         filename: 'remoteEntry.js',
 
         exposes: {
-            './remoteConversionTool':'./src/app/conversion-tool/remote-conversion-tool.module.ts'
+            './RemoteConversionToolModule':'src/app/remote-conversion-tool/remote-conversion-tool.module.ts'
 
         },
 

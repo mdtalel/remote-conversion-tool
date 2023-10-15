@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'conversion-tool',
-    loadChildren: () => import('src/app/conversion-tool/remote-conversion-tool.module').then((m) => m.RemoteConversionToolModule)
+    loadChildren: () => import('src/app/remote-conversion-tool/remote-conversion-tool.module').then((m) => m.RemoteConversionToolModule)
   },
   {
     path:'**',

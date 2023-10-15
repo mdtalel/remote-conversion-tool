@@ -1,0 +1,9 @@
+<fm-pivot *ngIf="reportConfig && licencekey && licencekey !== ' '" [licenseKey]="licencekey"  #pivot (reportchange)="onReportChanged()" [report]="reportConfig" [toolbar]="true" (beforetoolbarcreated)="setToolbarTabs($event)">
+</fm-pivot>
+
+<fm-pivot *ngIf="reportConfig &&  (!licencekey || licencekey === ' ')"   #pivot (reportchange)="onReportChanged()" [report]="reportConfig" [toolbar]="true" (beforetoolbarcreated)="setToolbarTabs($event)">
+</fm-pivot>
+
+<div *ngIf="!reportConfig" class="no-config">
+    <mat-icon aria-hidden="false"  fontIcon="warning"></mat-icon> No configuration!
+</div>
